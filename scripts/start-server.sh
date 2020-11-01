@@ -1,4 +1,5 @@
 #!/bin/bash
+test
 echo "---Checking for 'runtime' folder---"
 if [ ! -d ${SERVER_DIR}/runtime ]; then
 	echo "---'runtime' folder not found, creating...---"
@@ -150,3 +151,4 @@ else
 	screen -S watchdog -d -m /opt/scripts/start-watchdog.sh
 	tail -f ${SERVER_DIR}/masterLog.0
 fi
+
