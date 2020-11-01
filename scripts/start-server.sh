@@ -1,5 +1,5 @@
 #!/bin/bash
-test
+
 echo "---Checking for 'runtime' folder---"
 if [ ! -d ${SERVER_DIR}/runtime ]; then
 	echo "---'runtime' folder not found, creating...---"
